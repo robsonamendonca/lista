@@ -88,12 +88,12 @@ function App() {
       }
     
       <div onClick={()=>abrirModal()} className="addTarefa">+</div>
-      <div onClick={()=>limpaDados()} className="delTarefa">x</div>
+      {/* <div onClick={()=>limpaDados()} className="delTarefa">x</div>  */}
       
       <div className="boxTarefas">
          <h2> Minhas Tarefas do Dia! </h2>
          {
-             tarefas && tarefas.map((val)=> {
+             tarefas.map((val)=> {
                  if(!val.finalizada){
                     return (
                       <p onClick={()=>marcarConcluida(val.id)}>{val.tarefa}</p>

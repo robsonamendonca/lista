@@ -57,12 +57,12 @@ function App() {
     setModal(!modal);
  }
  
- const limpaDados = ()=> {
-   if(window.confirm("Deseja realmente limpar a lista?")){
-       window.localStorage.clear();   
-   }
+ // const limpaDados = ()=> {
+   // if(window.confirm("Deseja realmente limpar a lista?")){
+       // window.localStorage.clear();   
+   // }
    
- }
+ // }
  
  useEffect( ()=> {
     //Fazer uma chamada para API e preencher o estado de tarefas
